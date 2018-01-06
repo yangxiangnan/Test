@@ -15,6 +15,8 @@
 		E2361AFD1FFF24C4000EC801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2361AFC1FFF24C4000EC801 /* main.m */; };
 		E2361B071FFF24C4000EC801 /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2361B061FFF24C4000EC801 /* TestTests.m */; };
 		E2361B121FFF24C4000EC801 /* TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2361B111FFF24C4000EC801 /* TestUITests.m */; };
+		E2361B221FFF53DB000EC801 /* TestRunloop.m in Sources */ = {isa = PBXBuildFile; fileRef = E2361B211FFF53DB000EC801 /* TestRunloop.m */; };
+		E2BC76772000D4D9004C2AAA /* TestTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BC76762000D4D9004C2AAA /* TestTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		E2361B0D1FFF24C4000EC801 /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2361B111FFF24C4000EC801 /* TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUITests.m; sourceTree = "<group>"; };
 		E2361B131FFF24C4000EC801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2361B201FFF53DB000EC801 /* TestRunloop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRunloop.h; sourceTree = "<group>"; };
+		E2361B211FFF53DB000EC801 /* TestRunloop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRunloop.m; sourceTree = "<group>"; };
+		E2BC76752000D4D9004C2AAA /* TestTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTimer.h; sourceTree = "<group>"; };
+		E2BC76762000D4D9004C2AAA /* TestTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 				E2361AEE1FFF24C4000EC801 /* AppDelegate.m */,
 				E2361AF01FFF24C4000EC801 /* ViewController.h */,
 				E2361AF11FFF24C4000EC801 /* ViewController.m */,
+				E2361B1F1FFF25CD000EC801 /* Runloop */,
 				E2361AF31FFF24C4000EC801 /* Main.storyboard */,
 				E2361AF61FFF24C4000EC801 /* Assets.xcassets */,
 				E2361AF81FFF24C4000EC801 /* LaunchScreen.storyboard */,
@@ -130,6 +137,17 @@
 				E2361B131FFF24C4000EC801 /* Info.plist */,
 			);
 			path = TestUITests;
+			sourceTree = "<group>";
+		};
+		E2361B1F1FFF25CD000EC801 /* Runloop */ = {
+			isa = PBXGroup;
+			children = (
+				E2361B201FFF53DB000EC801 /* TestRunloop.h */,
+				E2361B211FFF53DB000EC801 /* TestRunloop.m */,
+				E2BC76752000D4D9004C2AAA /* TestTimer.h */,
+				E2BC76762000D4D9004C2AAA /* TestTimer.m */,
+			);
+			path = Runloop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2361AF21FFF24C4000EC801 /* ViewController.m in Sources */,
+				E2BC76772000D4D9004C2AAA /* TestTimer.m in Sources */,
 				E2361AFD1FFF24C4000EC801 /* main.m in Sources */,
 				E2361AEF1FFF24C4000EC801 /* AppDelegate.m in Sources */,
+				E2361B221FFF53DB000EC801 /* TestRunloop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "TestRunloop.h"
 
 @interface ViewController ()
+@property (nonatomic, strong)TestRunloop *testRunloop;
+
 
 @end
 
@@ -16,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.testRunloop = [TestRunloop new];
+    [self.testRunloop start];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
